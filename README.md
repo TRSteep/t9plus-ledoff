@@ -1,5 +1,5 @@
 # T9Plus-ledoff
-Turn Off LED light for T9Plus mini PC
+Turn Off LED light for T9Plus mini PC (N100 cpu)
 
 There is an official utility for Windows to customize the backlighting on miniPC, but not for Linux, so this is it =)
 
@@ -19,7 +19,7 @@ Create script file for example in /etc
 - paste code
 - save file (ctrl + x, y)
 
-/or copy downloaded file to the same folder /etc
+OR copy downloaded file to the same folder /etc
 - `cp ~/Documents/t9plus-ledoff.py /etc/t9plus-ledoff.py`
 
 ## Configure autostart

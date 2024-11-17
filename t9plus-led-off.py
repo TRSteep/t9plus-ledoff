@@ -1,27 +1,29 @@
 #!/usr/bin/env python3
 
-# Turn Off LED light for T9Plus mini PC
-# Version 0.1
+# Turn Off LED light for T9Plus mini PC (N100 cpu)
+# Version 0.2
 # "Off": 0x04 : 0
 # "On": 0x02 : 254
 
 import serial
 import time
 
-# SET LED status
-def send_led_status(serial_port, baud_rate, mode, brightness, speed):
+# SET LED status OFF
+def send_led_status_off():
+    """ Procedure to SET LED backlight OFF
+    """
     try:
         # Open serial port
-        s = serial.Serial(serial_port, baud_rate)
+        s = serial.Serial('/dev/ttyUSB0', 10000) # LED controller
         # Send data with delays
-        for b in (0xfa, mode, brightness, speed, 0):
-            s.write(bytes([b]))
+        for i in (0xfa, 0x04, 1, 1, 0):
+            s.write(bytes([i]))
             time.sleep(0.005)
- 
         # Close serial port
         s.close()
-        print("LED status sent successfully.")
+        print("LED set OFF successfully")
     except Exception as e:
         print("An error occurred:", str(e))
 
-send_led_status('/dev/ttyUSB0', 10000, 0x04, 1, 1)
+# Turn OFF LED light
+send_led_status_off()
