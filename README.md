@@ -20,7 +20,7 @@ Create script file for example in /etc
 - save file (ctrl + x, y)
 
 OR copy downloaded file to the same folder /etc
-- `cp ~/Documents/t9plus-ledoff.py /etc/t9plus-ledoff.py`
+- `sudo cp ~/Downloads/t9plus-ledoff.py /etc/t9plus-ledoff.py`
 
 ## Configure autostart
 There are many options for autostarting scripts on Linux systems, this is one option that runs the script immediately after booting (before user login)

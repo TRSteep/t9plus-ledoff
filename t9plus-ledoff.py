@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 # Turn Off LED light for T9Plus mini PC (N100 cpu)
+# https://github.com/TRSteep/t9plus-ledoff
 # Version 0.2
 # "Off": 0x04 : 0
 # "On": 0x02 : 254
