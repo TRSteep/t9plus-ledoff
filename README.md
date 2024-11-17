@@ -1,9 +1,9 @@
-# t9plus-ledoff
+# T9Plus-ledoff
 Turn Off LED light for T9Plus mini PC
 
 There is an official utility for Windows to customize the backlighting on miniPC, but not for Linux, so this is it =)
 
-# requirements
+# Requirements
 You need python 3 installed
 ```bash
 sudo apt update
@@ -18,7 +18,8 @@ Create script file for example in /etc
 - `sudo nano /etc/t9plus-ledoff.py`
 - paste code
 - save file (ctrl + x, y)
-or copy file to the same folder /etc
+
+/or copy downloaded file to the same folder /etc
 - `cp ~/Documents/t9plus-ledoff.py /etc/t9plus-ledoff.py`
 
 ## Configure autostart
@@ -27,3 +28,9 @@ Create script file in /etc/rc.local
 - `sudo nano /etc/rc.local`
 - Add line `python3 /etc/t9plus-ledoff.py`
 - save file (ctrl + x, y)
+
+# Problems
+There is one problem with the highlighting not related to the script
+The LED controller automatically turns it ON when the system goes into sleep mode, so you need to turn OFF sleep mode to prevent turning on LED light at night =)
+
+PS Reboot don't turn ON LED light, only sleep mode

@@ -4,14 +4,6 @@
 # Version 0.1
 # "Off": 0x04 : 0
 # "On": 0x02 : 254
-#
-# Script file
-# sudo nano /etc/t9plus-ledoff.py
-#   CODE
-#
-# Autostart script
-# sudo nano /etc/rc.local
-#   python3 /etc/t9plus-ledoff.py
 
 import serial
 import time
