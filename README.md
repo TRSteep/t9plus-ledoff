@@ -10,6 +10,10 @@ sudo apt update
 sudo apt upgrade
 sudo apt install python3
 ```
+And serial lib
+```bash
+sudo apt install python3-serial
+```
 
 # Autostart
 Script Turn Off LED light on T9Plus mini PC, but LED turn ON every miniPC turn ON, so you can add script to autostart:
